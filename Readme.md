@@ -7,9 +7,9 @@ A_write.py will store the extracted data(The energy of each molecule) into the t
 (B) Get information about atoms and bonds of molecules.
 ========
 Read the smile format of molecules. Convert with rdkit  B.py
-========
-(C) After the last step, the SMILES and ENERGY are converted into a dataset that can be handled by pytorch geometric.
 
+(C) After the last step, the SMILES and ENERGY are converted into a dataset that can be handled by pytorch geometric.
+========
 Save in the QM9 dataset format ,the dataset format like https://pytorch-geometric.readthedocs.io/en/latest/modules/datasets.html
 
 >from torch_geometric.data import (InMemoryDataset, download_url, extract_zip, Data)
