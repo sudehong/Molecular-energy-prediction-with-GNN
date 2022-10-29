@@ -24,5 +24,15 @@ Convert smiles to graph of Networkx and convert it to pytorch geometry data. The
 networkx: https://networkx.org/documentation/stable/
 torch-geometric:https://pytorch-geometric.readthedocs.io/en/latest/notes/introduction.html#data-handling-of-graphs
 
+(D) GNN model
+====
+Using the feature vector x_i of the atom from after Conv, calculate the inner product x_i dot x_j between the bound atoms, and regress y (the rest of y) on the sum.
 
 
+(E)result
+======
+The loss function does decrease and maintains at a low point and then stops changing. But since multiple molecular data were fitted using one W, the error is large. Please see the picture for the results.
+
+
+=======
+Before starting the training, please install the required packages.
